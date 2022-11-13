@@ -5,13 +5,13 @@ import { LOGIN_PAGE, LOGOUT_PAGE, THALAPULA_TRADING, HOME_PAGE } from '../../uti
 function Header() {
     const { SetCurrentPage, user, isLogin } = useContext(TradingDocsContext);
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="navbar-brand" 
                     onClick={() => SetCurrentPage(HOME_PAGE)}>{THALAPULA_TRADING}</div>
             <div className="collapse navbar-collapse" id="navbarText">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">{user.name}</a>
+                        <a className="nav-link" href="#">{user.name+'('+user.email+")"}</a>
                     </li>
                 </ul>
                 <span className="navbar-text">

@@ -1,9 +1,10 @@
 import { useContext, useState } from "react";
 import { TradingDocsContext } from "../../hooks/context/TradingDocsProvider";
 import { User } from "../../typings/User";
+import { REGISTER_PAGE } from "../../util/Constants";
 
 export const Login = () => {
-    const { LoginUser, message } = useContext(TradingDocsContext);
+    const { SetCurrentPage, LoginUser, message } = useContext(TradingDocsContext);
 
     const [user, setUser] = useState({ email: "123@example.com" } as User);
 
@@ -42,7 +43,7 @@ export const Login = () => {
                 onBlur={(e) => setPassword(e.currentTarget.name, e.currentTarget.value)} />
         </div>
         <button type="submit" className="btn btn-primary" onClick={() => LoginUser(user)}>Sign in</button>
-        <button type="button" className="btn btn-light" onClick={() => LoginUser(user)}>New around here? Sign up</button>
+        <button type="button" className="btn btn-light" onClick={() => SetCurrentPage(REGISTER_PAGE)}>New around here? Sign up</button>
         <button type="button" className="btn btn-light">Forgot password?</button>
     </div>
 }
