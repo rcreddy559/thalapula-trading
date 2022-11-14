@@ -5,6 +5,8 @@ export const LOGIN_PAGE = 'LOGIN_PAGE';
 export const THALAPULA_TRADING = "Thalapula Trading";
 export const LOGOUT_PAGE = 'LOGOUT_PAGE';
 export const REGISTER_PAGE = 'REGISTER_PAGE';
+export const OPTIONS_TRADE_DASHBOARD_PAGE = 'OPTIONS_TRADE_DASHBOARD_PAGE';
+export const CREATE_OPTIONS_TRADE_PAGE = 'CREATE_OPTIONS_TRADE_PAGE';
 
 export const SET_USER = "SET_USER";
 export const SET_LOGOUT_USER = "SET_LOGOUT_USER";

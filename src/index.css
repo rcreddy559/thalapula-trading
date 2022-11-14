@@ -16,3 +16,13 @@ code {
   padding-left: 30%;
   padding-right: 30%;
 }
+
+.form-group label {
+  padding: 5px;
+}
+
+.form-group input {
+  padding: 5px;
+}
+
+
