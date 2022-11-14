@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import { createUser, loginUser } from "../service/Service";
 import { User } from "../typings/User";
-import { HOME_PAGE, SET_CURRENT_PAGE } from "../util/Constants";
+import { HOME_PAGE, SET_CURRENT_PAGE, SET_LOGOUT_USER } from "../util/Constants";
 import { TradingDocsReducer } from "./reducer/TradingDocsReducer";
 import { TradingDocsScheme } from "./TradingDocsScheme";
 import { TradingDocsState } from "./TradingDocsState";
@@ -31,6 +31,9 @@ export function useTradingDocs(): TradingDocsScheme {
         },
         LoginUser(user: User) {
             loginUser(user, dispatch)
+        },
+        LogoutUser(user: User) {
+            dispatch({type: SET_LOGOUT_USER})
         }
      }
 }

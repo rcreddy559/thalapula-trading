@@ -7,4 +7,5 @@ export const LOGOUT_PAGE = 'LOGOUT_PAGE';
 export const REGISTER_PAGE = 'REGISTER_PAGE';
 
 export const SET_USER = "SET_USER";
+export const SET_LOGOUT_USER = "SET_LOGOUT_USER";
 export const SET_MESSAGE = "SET_MESSAGE";
