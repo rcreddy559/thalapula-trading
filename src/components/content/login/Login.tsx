@@ -21,13 +21,13 @@ export const Login = () => {
             ...user,
             password: value
         })
-    }  
+    }
 
     function validateLogin() {
         setError("");
-        if(!user.email || user.email.trim().length < 1) {
+        if (!user.email || user.email.trim().length < 1) {
             setError("Please Enter Valid Email!");
-        } else if(!user.password || user.password.trim().length < 1) {
+        } else if (!user.password || user.password.trim().length < 1) {
             setError("Please Enter Valid Password!");
         } else {
             LoginUser(user)
@@ -44,7 +44,7 @@ export const Login = () => {
                 className="form-control"
                 id="exampleDropdownFormEmail1"
                 placeholder="email@example.com"
-                onKeyDown={()=>setError("")}
+                onKeyDown={() => setError("")}
                 onBlur={(e) => setEmail(e.currentTarget.name, e.currentTarget.value)} />
         </div>
         <div className="form-group">
@@ -54,7 +54,7 @@ export const Login = () => {
                 className="form-control"
                 id="exampleDropdownFormPassword1"
                 placeholder="Password"
-                onKeyDown={()=>setError("")}
+                onKeyDown={() => setError("")}
                 onBlur={(e) => setPassword(e.currentTarget.name, e.currentTarget.value)} />
         </div>
         <button type="submit" className="btn btn-primary" onClick={validateLogin}>Sign in</button>

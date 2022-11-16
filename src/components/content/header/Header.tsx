@@ -14,10 +14,10 @@ function Header() {
                         {user.name && user.name + "(" + user.email + ")"}
                     </li>
                     <li className="nav-item">
-                        <button type="button" 
+                        <button type="button"
                             className="btn btn-secondary"
                             onClick={() => SetCurrentPage(OPTIONS_TRADE_DASHBOARD_PAGE)}>Options Dashboard</button>
-                        <button type="button" 
+                        <button type="button"
                             className="btn btn-secondary"
                             onClick={() => SetCurrentPage(CREATE_OPTIONS_TRADE_PAGE)}>Create Options Trade</button>
                     </li>
