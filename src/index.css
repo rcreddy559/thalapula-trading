@@ -21,8 +21,10 @@ code {
   padding: 5px;
 }
 
-.form-group input {
+.input-margin-left {
   padding: 5px;
+  margin-left: 5px;
 }
+
 
 

@@ -1,4 +1,4 @@
-import { BinaryOperatorToken } from "typescript";
+import { OptionTrade } from "../typings/OptionTrade";
 import { User } from "../typings/User";
 
 export interface TradingDocsState {
@@ -6,4 +6,7 @@ export interface TradingDocsState {
     message: string;
     user: User;
     isLogin: boolean;
+    optionTrades: OptionTrade[];
+    optionTrade: OptionTrade;
+    isOptionEdit: boolean;
 }

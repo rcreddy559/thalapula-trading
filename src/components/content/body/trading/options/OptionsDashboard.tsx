@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { TradingDocsContext } from "../../../../hooks/context/TradingDocsProvider";
 import { CREATE_OPTIONS_TRADE_PAGE } from "../../../../util/Constants";
-import { OptionsTradingList } from "./OptionsTradingList"
+import { OptionTradingList } from "./OptionTradesList";
 
 export const OptionsDashboard = () => {
     const { SetCurrentPage } = useContext(TradingDocsContext);
@@ -10,6 +10,6 @@ export const OptionsDashboard = () => {
         <button type="button"
             className="btn btn-secondary"
             onClick={() => SetCurrentPage(CREATE_OPTIONS_TRADE_PAGE)}>Options Trade</button>
-        <OptionsTradingList />
+        <OptionTradingList />
     </div>
 }
